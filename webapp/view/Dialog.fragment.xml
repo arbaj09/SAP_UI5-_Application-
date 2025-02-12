@@ -5,8 +5,9 @@
     id="dialog"
     title="Info" type="Message">
       <content>
-        <Text text=" Customer data is later saved via an OData service. please try again later !!!!"/>
+        <Text text="Customer {arbaz>/CustomerName}   is later saved via an OData service."/>
       </content>
+      
       <beginButton>
         <Button
           text="Ok"

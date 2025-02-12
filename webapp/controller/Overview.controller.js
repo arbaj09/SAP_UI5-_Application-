@@ -1,11 +1,12 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/core/syncStyleClass"
+    "sap/ui/core/syncStyleClass",
+    "sap/ui/model/json/JSONModel"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller,syncStyleClass) {
+    function (Controller,syncStyleClass, JSONModel) {
         "use strict";
 
         return Controller.extend("sap.training.exc.controller.Overview", {
@@ -25,6 +26,12 @@ sap.ui.define([
               },
               onCloseDialog: function () {
                 this.byId("dialog").close();
+              },
+              onInit:function(){
+
+                
+                var oModel= new JSONModel()
+                this.getView().setModel(oModel,'arbaz')
               }
 
           
