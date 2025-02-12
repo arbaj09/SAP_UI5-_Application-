@@ -27,12 +27,17 @@ sap.ui.define([
               onCloseDialog: function () {
                 this.byId("dialog").close();
               },
+              onCustomerChange: function (oEvent) {
+                var oBindingContext = oEvent.getParameter("listItem").getBindingContext();
+                this.byId("bookingTable").setBindingContext(oBindingContext);
+              },
               onInit:function(){
 
                 
                 var oModel= new JSONModel()
                 this.getView().setModel(oModel,'arbaz')
-              }
+              },
+             
 
           
             
