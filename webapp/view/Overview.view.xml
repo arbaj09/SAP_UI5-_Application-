@@ -60,7 +60,7 @@
     <Table id="customerTable"  growing="true" growingThreshold="10" selectionChange=".onCustomerChange" mode="SingleSelectLeft" 
     class="sapUiResponsiveMargin" width="auto" 
     items="{
-      path: '/Customers',
+      path: '/UX_Customer',
       sorter: [
     {path: 'City', group: true},
     {path: 'CustomerName'} 
