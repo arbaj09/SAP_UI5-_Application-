@@ -49,7 +49,7 @@
             <core:Title text="{i18n>contactDataFormContainerTitle}"/>
             <Label text="{i18n>emailLabelText}"/>    
             <Input value="{arbaz>/Email}"/>
-            <Label text="	i18n>phoneLabelText"/>
+            <Label text="	{i18n>phoneLabelText}"/>
             <Input value="{arbaz>/Telephone}"/>     
           </f:content>
         </f:SimpleForm>
